@@ -67,6 +67,7 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="FactoryPattern\README.md" />
+    <None Include="README.md" />
     <None Include="Singleton\README.md" />
   </ItemGroup>
   <ItemGroup />

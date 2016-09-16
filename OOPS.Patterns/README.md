@@ -1,1 +1,1 @@
-# Samples Project for Design Patterns
+## Code samples for Design Patterns
