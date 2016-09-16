@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using OOPS.Patterns.FactoryPattern;
 using OOPS.Patterns.FactoryPattern.Interfaces;
+using OOPS.Patterns.Singleton;
 
 namespace OOPS.Patterns
 {
@@ -15,12 +16,12 @@ namespace OOPS.Patterns
         private static void ExecuteFactoryPattern()
         {
             var vehicles = new List<IVehicle>();
-            vehicles.Add(Producer.ProduceVehicle(new CarFactory()));
-            vehicles.Add(Producer.ProduceVehicle(new JeepFactory()));
-            vehicles.Add(Producer.ProduceVehicle(new ScooterFactory()));
-            vehicles.Add(Producer.ProduceVehicle(new BikeFactory()));
-            vehicles.Add(Producer.ProduceVehicle(new JeepFactory()));
-            vehicles.Add(Producer.ProduceVehicle(new CarFactory()));
+            vehicles.Add(VehicleCompany.Instance.ProduceVehicle(new CarFactory()));
+            vehicles.Add(VehicleCompany.Instance.ProduceVehicle(new JeepFactory()));
+            vehicles.Add(VehicleCompany.Instance.ProduceVehicle(new ScooterFactory()));
+            vehicles.Add(VehicleCompany.Instance.ProduceVehicle(new BikeFactory()));
+            vehicles.Add(VehicleCompany.Instance.ProduceVehicle(new JeepFactory()));
+            vehicles.Add(VehicleCompany.Instance.ProduceVehicle(new CarFactory()));
             foreach (var vehicle in vehicles)
             {
                 Console.WriteLine("Vehicle " + vehicle.VehecleName + " has " + vehicle.NumberOfWheels + " wheels.");

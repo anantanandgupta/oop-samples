@@ -57,7 +57,7 @@
     <Compile Include="FactoryPattern\Interfaces\IVehicleFactory.cs" />
     <Compile Include="FactoryPattern\Jeep.cs" />
     <Compile Include="FactoryPattern\JeepFactory.cs" />
-    <Compile Include="FactoryPattern\Producer.cs" />
+    <Compile Include="Singleton\VehicleCompany.cs" />
     <Compile Include="FactoryPattern\Scooter.cs" />
     <Compile Include="FactoryPattern\Base\TwoWheeler.cs" />
     <Compile Include="FactoryPattern\ScooterFactory.cs" />
@@ -66,6 +66,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="FactoryPattern\README.md" />
+    <None Include="Singleton\README.md" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

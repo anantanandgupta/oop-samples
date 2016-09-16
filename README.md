@@ -5,7 +5,7 @@ Patterns
 - [x] Factory
 - [ ] Builder
 - [ ] Prototype
-- [ ] Singleton
+- [x] Singleton
 - [ ] Adapter
 - [ ] Composite
 - [ ] Decorator
