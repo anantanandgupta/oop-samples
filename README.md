@@ -1,5 +1,5 @@
 # oop-samples
-All the sample code for OOP related patterns and principles
+All the sample code for principles, patterns and object oriented programming (oop) in C#
 Patterns
 --------
 - [x] Factory
